@@ -10,9 +10,10 @@
   Gatsby + WPGraphQL Blog Example
 </h1>
 
-This is an example Gatsby site using WPGraphQL as the source. 
+This is an example Gatsby site using WPGraphQL as the source.
 
 ## WordCamp Talk
+
 This repo was created specifically for showcasing the capabilities of WPGraphQL and how it can be used in many ways. One particular use is with GatsbyJS. The WordCamp talk this repo was created for can be seen here: https://wordpress.tv/2019/03/08/jason-bahl-building-static-sites-with-wordpress-gatsby-and-wpgraphql/
 
 ## Setup
@@ -21,10 +22,9 @@ Quick video showing setup of the Gatsby site locally: https://www.youtube.com/wa
 
 ## WordPress Source
 
-The WordPress where the content is managed lives here: [https://demo.wpgraphql.com](https://demo.wpgraphql.com)
+The WordPress where the content is managed lives here: [https://graphql.ashleyhitchcock.com](https://graphql.ashleyhitchcock.com)
 
 ![Screenshot of the WordPress source site](./img/screenshot-demo.wpgraphql.com.png)
-
 
 ## Gatsby Site
 
@@ -34,7 +34,7 @@ The Live Gatsby site is at: [https://gatsby-wpgraphql-blog-example.netlify.com/]
 
 ### Features
 
-Below are features of the Gatsby site that are all sourced via WPGraphQL Queries, so the data is 
+Below are features of the Gatsby site that are all sourced via WPGraphQL Queries, so the data is
 managed in WordPress, but is pulled into the Gatsby site and rendered there:
 
 - :white_check_mark: Menus

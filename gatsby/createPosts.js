@@ -14,7 +14,7 @@ module.exports = async ({ actions, graphql }) => {
         nodes {
           id
           uri
-          postId
+          databaseId
           title
         }
       }
@@ -36,7 +36,7 @@ module.exports = async ({ actions, graphql }) => {
         },
       } = data
 
-      const nodeIds = nodes.map(node => node.postId)
+      const nodeIds = nodes.map(node => node && node.databaseId)
       const blogTemplate = path.resolve(`./src/templates/blog.js`)
       const blogPagePath = !variables.after ? `/` : `/page/${pageNumber}`
 
@@ -69,6 +69,9 @@ module.exports = async ({ actions, graphql }) => {
     })
 
     allPosts.map(post => {
+      if (!post) {
+        return
+      }
       console.log(`create post: ${post.uri}`)
       createPage({
         path: `/blog/${post.uri}/`,

@@ -65,7 +65,7 @@ class IndexPage extends Component {
             {data &&
               data.wpgraphql &&
               data.wpgraphql.posts.nodes.map(post => (
-                <div key={post.id}>
+                <div key={post.databaseId}>
                   <PostEntry post={post} />
                 </div>
               ))}

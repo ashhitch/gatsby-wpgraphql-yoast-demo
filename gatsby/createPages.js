@@ -17,7 +17,7 @@ module.exports = async ({ actions, graphql }) => {
         nodes {
           id
           uri
-          pageId
+          databaseId
           title
         }
       }

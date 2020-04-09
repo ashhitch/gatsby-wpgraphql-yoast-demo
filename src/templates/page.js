@@ -17,7 +17,7 @@ const Page = props => {
   const { title, content } = page
   return (
     <SiteLayout location={location}>
-      <Seo title={`${page.title}`} />
+      <Seo title={`${page.seo.title}`} description={`${page.seo.metaDesc}`} />
       <Row type="flex" gutter={24}>
         <Col xs={24} md={16}>
           <h1>{title}</h1>
@@ -47,6 +47,28 @@ export const pageQuery = graphql`
         title
         content
         uri
+        seo {
+          title
+          metaDesc
+          focuskw
+          metaKeywords
+          metaRobotsNoindex
+          metaRobotsNofollow
+          opengraphTitle
+          opengraphDescription
+          opengraphImage {
+            altText
+            sourceUrl
+            srcSet
+          }
+          twitterTitle
+          twitterDescription
+          twitterImage {
+            altText
+            sourceUrl
+            srcSet
+          }
+        }
       }
     }
   }

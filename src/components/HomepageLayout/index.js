@@ -16,7 +16,7 @@ const HomepageLayout = ({ pageNumber, location, children }) => (
         style={{ padding: `75px 75px 50px 75px` }}
       >
         <Col xs={24} md={14} style={{ textAlign: `center` }}>
-          <h1>Gatsby + WPGraphQL Demo</h1>
+          <h1>Gatsby + WPGraphQL + Yoast Demo</h1>
           <Row
             type="flex"
             justify="center"
@@ -51,7 +51,7 @@ const HomepageLayout = ({ pageNumber, location, children }) => (
           </Row>
           <div>
             <p style={{ fontSize: `1.5rem` }}>
-              This is an example of a Gatsby + WPGraphQL site.
+              This is an example of a Gatsby + WPGraphQL + Yoast SEO site.
             </p>
             <p style={{ fontSize: `1.2rem` }}>
               The content is generated using{` `}
@@ -62,8 +62,6 @@ const HomepageLayout = ({ pageNumber, location, children }) => (
               >
                 WPGraphQL
               </a>
-              {` `}to pull content from{` `}
-              <a href="https://demo.wpgraphql.com">demo.wpgraphql.com</a>
             </p>
             <a
               href="https://github.com/wp-graphql/gatsby-wpgraphql-blog-example"
